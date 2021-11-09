@@ -1,0 +1,88 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${MICROSERVICE_NAME}
+  labels:
+    app: ${MICROSERVICE_NAME}
+spec:
+  replicas: ${REPLICA}
+  selector:
+    matchLabels:
+      app: ${MICROSERVICE_NAME}
+  template:
+    metadata:
+      labels:
+        app: ${MICROSERVICE_NAME}
+    spec:
+      containers:
+      - envFrom:
+          - configMapRef:
+                name: ${MICROSERVICE_NAME}
+        name: ${MICROSERVICE_NAME}
+        image: ${AWS_ACCOUNT_NUMBER}.dkr.ecr.${REGION}.amazonaws.com/${CLIENT_NAME}/${ENV}/${MICROSERVICE_NAME}:${TAG}
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: ${MIN_CPU}
+            memory: ${MIN_MEM}
+          limits:
+            cpu: ${MAX_CPU}
+            memory: ${MAX_MEM}
+        ports:
+          - containerPort: 3000
+            name: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${MICROSERVICE_NAME}
+spec:
+  selector:
+    app: ${MICROSERVICE_NAME}
+  ports:
+    - protocol: TCP
+      name: "http"
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: kong
+  name: ${MICROSERVICE_NAME}-ing
+  namespace: ${NAMESPACE}
+spec:
+  rules:
+  - host: ${HOST_URL}
+    http:
+      paths:
+      - backend:
+          serviceName: ${MICROSERVICE_NAME}
+          servicePort: 3000
+        path: ${CONTEXT_PATH}
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongIngress
+metadata:
+  name: ${MICROSERVICE_NAME}-ing
+  namespace: ${NAMESPACE}
+proxy:
+  protocol: http
+  connect_timeout: 10000
+  retries: 10
+  read_timeout: 10000
+  write_timeout: 10000
+route:
+  methods:
+  - POST
+  - GET
+  - PUT
+  - OPTIONS
+  - DELETE
+  regex_priority: 0
+  strip_path: ${STRIP_PATH}
+  preserve_host: true
+  protocols:
+  - http
+  - https

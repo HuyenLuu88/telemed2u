@@ -1,0 +1,87 @@
+@import '../../styles/themes/color.scss';
+
+.ps-main-container {
+    width: 860px;
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    top: 219px;
+    margin: 0 auto;
+    padding: 44px 0;
+    text-align: center;
+    margin-top: 95px;
+    margin-bottom: 42px;
+}
+
+.ps-form-box {
+    width: 663px;
+    margin: 0 auto;
+    text-align: start;
+    margin-bottom: 95px;
+}
+
+.ps-heading-txt {
+    height: 34px;
+    width: 338px;
+    color: #1C2A54;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.ps-subheading-txt {
+    height: 60px;
+    width: 615px;
+    color: #13191F;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.ps-input-label {
+    height: 30px !important;
+    width: 663px !important;
+    color: $label !important;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    line-height: 30px !important;
+    margin-top: 21px !important;
+}
+
+.ps-input-opt-wrap {
+    width: 100%
+}
+
+.ps-input-opt {
+    width: 30%;
+    color: $labelColor;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+
+    span:nth-child(2) {
+        font-size: 14px;
+        margin-left: 17px;
+    }
+}
+
+.ps-btn-wrp {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
+
+.ps-btn-submit {
+    height: 40px;
+    width: 136px;
+    font-weight: 500;
+    color: $white !important;
+    background-color: $primary !important;
+    text-transform: capitalize !important;
+}
+
+.ps-input-fields {
+    width: 100%;
+    margin-top: 10px;
+}

@@ -1,0 +1,102 @@
+@import '../../styles/themes/color.scss';
+.container {
+  .astrik {
+    color: red;
+  }
+  max-width: 1220px;
+  padding: 4rem;
+  .form-wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    .form {
+      margin: 2rem 6rem;
+      .align-item-center{
+        display: flex;
+        align-items: center;
+      }
+      h1 {
+        color: #111111;
+        margin-top: 5px;
+        font-size: 1.75rem;
+        margin-bottom: 50px;
+      }
+      .input-label {
+        font-size: 14px;
+        padding-bottom: 8px;
+      }
+      .text-input {
+        width: 100%;
+        color: #777777;
+        margin-bottom: 2rem;
+        .MuiFormHelperText-root {
+          display: flex;
+          justify-content: flex-end;
+          color: red;
+        }
+        .resendotp-grayed {
+          color: #777777;
+          cursor: not-allowed;
+        }
+        .link-blue {
+          color: $primary;
+        }
+      }
+      .submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn-primary {
+          font-weight: 500;
+          color: #fff !important;
+          background-color: $primary !important;
+          text-transform: capitalize !important;
+          width: 130px;
+        }
+        .btn-error {
+          font-weight: 500;
+          color: #fff !important;
+          background-color: #777777 !important;
+          text-transform: capitalize !important;
+          width: 130px;
+          cursor: not-allowed;
+        }
+        h5 {
+          color: #777777;
+          margin-top: 8px;
+        }
+        a {
+          color: $primary;
+        }
+      }
+      .error-login {
+        color: #777777;
+        text-align: center;
+        margin-top: 94px;
+      }
+      .date-picker {
+        width: 100%;
+        .MuiOutlinedInput-input {
+          padding: 10.5px 14px;
+        }
+        &.MuiFormControl-marginNormal {
+          margin-top: 0;
+          margin-bottom: 2rem !important;
+        }
+      }
+      .MuiFormHelperText-root {
+        display: flex;
+        justify-content: flex-end;
+        color: red;
+      }
+      .form-gender{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.dbl-error{
+  display: flex;
+  flex-flow: wrap;
+  width: 185px;
+  justify-content: flex-end;
+
+}

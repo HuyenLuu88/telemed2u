@@ -1,0 +1,15 @@
+@import './styles/themes/lato.scss';
+body {
+  margin: 0;
+  font-family: 'Lato';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Lato';
+}
+
+.dropdown-placeholder {
+  font-family: 'Lato';
+}

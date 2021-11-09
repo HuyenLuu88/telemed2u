@@ -1,0 +1,430 @@
+@import '../../styles/themes/color.scss';
+
+.astrik {
+    color: red;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ba-page {
+    // height: 100%;
+    // width: 100%;
+    background-color: #F9FAFD;
+    padding-top: 62px;
+}
+
+.ba-main-container {
+    width: 860px;
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    top: 219px;
+    margin: 0 auto;
+    padding: 44px 0;
+    text-align: center;
+    // margin-top: 95px;
+}
+
+.ba-provider-detail-box {
+    display: flex;
+}
+
+.ba-provider-address {
+    width: 248px;
+    color: #516983;
+    
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.ba-separator {
+    box-sizing: border-box;
+    height: 1px;
+    width: 422px;
+    border: 1px solid #999999;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/* Appointment Form */
+
+.ba-form-box {
+    width: 427px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.ba-form-heading {
+    color: #1C2A54;
+    
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.ba-input-fields {
+    width: 100%;
+}
+
+.ba-date-input .MuiInputBase-input {
+    padding: 10.5px 14px;
+}
+
+.ba-input-box {
+    margin-top: 30px;
+}
+
+.ba-input-label {
+    margin-bottom: 10px;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    line-height: 18px !important;
+}
+
+.ba-input-label span {
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    line-height: 18px !important;
+}
+
+.ba-err-helper-txt {
+    color: #E83E44 !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    letter-spacing: 0 !important;
+    line-height: 19px !important;
+}
+
+.ba-provider-separator {
+    box-sizing: border-box;
+    height: 1px;
+    border: 1px solid #999999;
+    margin: 10px 20px;
+}
+
+.ba-provider-types {
+    color: #516983;
+    
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin: 7px 12px;
+}
+
+.ba-ptovider-types-wrp {
+    height: 30px;
+    margin: 5px;
+    border-radius: 4px;
+    background-color: #F8F8F9;
+}
+
+.ba-header {
+    height: 124px;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ba-logo {
+    height: 80px;
+    width: 179.1px;
+}
+
+.ba-btn-wrp {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
+
+.ba-btn-submit {
+    height: 40px;
+    width: 197px;
+    font-weight: 500;
+    color: #fff !important;
+    background-color: $primary !important;
+    text-transform: capitalize !important;
+}
+
+.ba-btn-submit:disabled {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Add another person form */
+.ba-aap-input-label {
+    
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 29px;
+}
+
+.ba-add-anthr-prsn-lbl {
+    // height: 29px;
+    // width: 109px;
+    color: #5571C6;
+    
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: right;
+    // float: right;
+    cursor: pointer;
+}
+
+.ba-person-list-box {
+    width: 422px;
+    border-radius: 4px;
+    background-color: #F9F9F9;
+    // display: flex;
+    // flex-direction: row;
+    margin-top: 10px;
+    position: relative;
+
+    .check-icon {
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .edit-icon {
+        position: absolute;
+        top: 19px;
+        right: 35px;
+        height: 13.24px;
+        width: 13.24px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .delete-icon {
+        position: absolute;
+        top: 19px;
+        right: 10px;
+        height: 13.24px;
+        width: 13.24px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    div {
+        padding: 12px 30px 12px 64px;
+        span {
+            height: 116px;
+            width: 279px;
+            color: #516983;
+            
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 29px;
+        }
+    }
+}
+
+.ba-choose-img-btn {
+    box-sizing: border-box;
+    height: 41px;
+    width: 146px;
+    border: 1px solid #5571C6;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #5571C6;
+    background-color: $white;
+
+    label {
+        width: 133px;
+        display: inline-block;
+        height: 40px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+}
+
+.ba-person-icon {
+    height: 13.24px;
+    width: 13.24px;
+    margin-right: 10px;
+}
+
+.ba-edit-del-icon {
+    height: 13.24px;
+    width: 13.24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ba-src-person-input {
+    box-sizing: border-box;
+    height: 41px;
+    width: 360.46px;
+    border: 1px solid #B0BCE4;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    margin: 10px 0 !important;
+    
+}
+
+.ba-add-patient {
+    height: 22px;
+    color: #5571C6;
+    
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 10px 19px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ba-select-patient-heading {
+    height: 22px;
+    color: #516983;
+    font-family: Rubik;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+
+.ba-add-patient-modal-container {
+    height: 710px;
+    width: 977px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ba-add-patient-modal-heading {
+    height: 22px;
+    width: 133px;
+    color: #1C2A54;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 45px 62px 0;
+    display: inline-block;
+
+    span {
+        
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.ba-add-patient-fields-wrap {
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    padding-left: 62px;
+}
+
+.ba-add-patient-btn {
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 35px;
+
+    button {
+        height: 40px;
+        width: 197px;
+        border-radius: 4px;
+        background-color: #5571C6;
+    }
+
+    span {
+        height: 18px;
+        width: 148px;
+        color: #FFFFFF;
+        
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+.ba-patient-list-wrp {
+    height: 70px;
+    width: 359.46px;
+    border-radius: 4px;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.ba-green-check-icon {
+    margin: 23px 20px;
+    height: 24px;
+    width: 24px;
+}
+
+.ba-patient-list-detail {
+    height: 48px;
+    width: 200px;
+    color: #516983;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.ba-edit-icon {
+    height: 13.24px;
+    width: 13.24px;
+    margin: 5px 0 0 45px;
+}
+
+.ba-delete-icon {
+    height: 13.24px;
+    width: 13.24px;
+    margin: 5px 0 0 15px;
+}
+
+.ba-attach-icn {
+    height: 20px;
+}
+
+.ba-delete-icn {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+.ba-uploaded-img-txt {
+    height: 29px;
+    color: #13191F;
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0 10px;
+}
+
+.ba-upload-img-wrp {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 50px;
+}
+
+.ba-back-icon {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+@import '../../styles/themes/color.scss';
+.button-container {
+  display: flex;
+  justify-content: center;
+  .btn-primary {
+    font-weight: 500;
+    color: #fff !important;
+    background-color: $primary !important;
+    text-transform: capitalize !important;
+    width: 130px;
+  }
+}
+.simple-modal-description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.modal-close {
+  // display: flex;
+  // justify-content: flex-end;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  cursor: pointer;
+}

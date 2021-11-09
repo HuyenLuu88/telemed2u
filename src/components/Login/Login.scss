@@ -1,0 +1,99 @@
+@import "../../styles/themes/color.scss";
+.container {
+  max-width: 1220px;
+  padding: 4rem;
+  .back-arrow {
+    cursor: pointer;
+  }
+  .form-wrapper {
+    .back-arrow{
+      cursor: pointer;
+    }
+    .main-header{
+      margin-bottom: 2%;
+    }
+    .contact-us{
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      font-size: 14px;
+      a{
+        padding-left: 3px;
+        cursor: pointer;
+      }
+    }
+    .center-align{
+      display: flex;
+      justify-content: center;
+    }
+    .align-item-center{
+      display: flex;
+      align-items: center;
+    }
+    .link-blue {
+      cursor: pointer;
+    }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    .form {
+      margin: 2rem 6rem;
+      .input-label {
+        font-size: 14px;
+        padding-bottom: 8px;
+      }
+      .text-input {
+        width: 100%;
+        color: #777777;
+        margin-bottom: 2rem;
+        .MuiFormHelperText-root {
+          display: flex;
+          justify-content: flex-end;
+          color: $primary;
+        }
+      }
+      .submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn-primary {
+          font-weight: 500;
+          color: #fff !important;
+          background-color: $primary !important;
+          text-transform: capitalize !important;
+          width: 130px;
+        }
+        h5 {
+          color: #777777;
+          margin-top: 12px;
+        }
+      }
+      .btn-primary {
+        font-weight: 500;
+        color: #fff !important;
+        background-color: $primary !important;
+        text-transform: capitalize !important;
+        width: 130px;
+      }
+      .error-login {
+        color: #777777;
+        text-align: center;
+        margin-top: 94px;
+        a {
+          color: $primary;
+        }
+      }
+      .m-container {
+        display: flex;
+        margin-bottom: 1rem;
+      }
+      .r-container {
+        display: flex;
+        align-items: center;
+      }
+      .loader {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

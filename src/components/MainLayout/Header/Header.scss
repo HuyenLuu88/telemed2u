@@ -1,0 +1,51 @@
+@import '../../../styles/themes/color.scss';
+.dashboard-header{
+  background-color: $white;
+	height: 70px;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0 2px 4px 0 rgba(222,231,241,0.5);
+
+	.dashboard-logo { 
+		width: 100px;
+		padding: 10px;
+		margin-left: 20px;
+	}
+
+	.user-menu-wrapper {
+		float: right;
+		margin: 13px 95px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		.user-img {
+			height: 42px;
+			width: 42px;
+			border-radius: 50%;
+		}
+
+		.dropdown-img {
+			height: 19px;
+    		width: 19px;
+		}
+
+		.user-name {
+			height: 22px;
+			width: 75px;
+			color: #1C2A54;
+			font-size: 18px;
+			letter-spacing: 0;
+			line-height: 22px;
+			display: block;
+			margin: 11px;
+		}
+	}
+}
+
+
+.user-menu-icon {
+	margin: 3px 10px 4px 5px;
+}

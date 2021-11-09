@@ -1,0 +1,35 @@
+@import '../../../styles/themes/color.scss';
+.dashboard-sidebar{
+  height: 100%;
+  width: 16vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 70px;
+  background-color: $white;
+  overflow-x: hidden;
+  z-index: 1;
+  // border: 1px solid black;
+  .nav-wrap{
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
+    img{
+      width: 26px;
+      height: 20px;
+    }
+  }
+  .menu {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: #516983;
+    cursor: pointer;
+  }
+
+  .active-menu {
+    color: $activeMenu;
+    font-weight: bold;
+  }
+}
